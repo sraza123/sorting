@@ -12,8 +12,7 @@ public class SortingTest {
 
         List<Integer> actual = Arrays.asList(1, 2, 4, 3, 7, 16);
         List<Integer> expectedResult = Arrays.asList(1, 3, 7, 2, 4, 16);
-        Sorting sorting = new Sorting();
-        List<Integer> expected = sorting.sortArray(actual);
+        List<Integer> expected = Sorting.sortArray(actual);
 
         Assert.assertEquals(expectedResult.size(), expected.size());
         Assert.assertEquals(expected, expectedResult);
